@@ -3,14 +3,16 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8"/>
     <title></title>
   </head>
   <body>
-    <div class="title">Словник - твоi знання</div>
+    <div class="title">
+      Словник - твоi знання
+    </div>
     <div class="whyslov">
       Чому ти должен користуватися словником?
       <ul>
@@ -20,5 +22,22 @@
         <li>Словник це умно</li>
       </ul>
     </div>
+    <div class="buy">
+      <span>
+        Введить промокод:<br>
+      </span>
+      <form id="promform" action="download.html">
+        <input type="text" name="promocode">
+        <br>
+        <button type="submit" class = "promobut">Використати</button>
+      </form>
+    </div>
+    <script>
+    var form = document.getElementById("promform");
+    form.addEventListener('submit', function(e) {
+      if (form.promocode.value !== "123") e.preventDefault();
+    });
+    </script>
+    
   </body>
 </html>

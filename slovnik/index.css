@@ -13,4 +13,28 @@ div{
 ul {
   display: table;
   margin: 0 auto;
+  list-style-type: circle;
+}
+
+input[type=text] {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 36px;
+    border: none;
+    border-bottom: 1px solid #000000;  
+}
+
+input[type=text]:focus {
+    border: none;
+    font-weight: bold;  
+    outline-width: 0;
+    border-bottom: 2px solid #000000; 
+}
+
+.promobut{
+    outline-width: 0;
+    font-size: 36px;
+    font-family: Montserrat;
+    border: 1 solid #000000;
+    background: #ffffff;
 }
