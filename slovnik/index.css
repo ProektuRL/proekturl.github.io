@@ -15,6 +15,9 @@ ul {
   margin: 0 auto;
   list-style-type: circle;
 }
+li {
+    text-align: left;
+}
 
 input[type=text] {
     font-family: Montserrat;
@@ -28,7 +31,11 @@ input[type=text]:focus {
     border: none;
     font-weight: bold;  
     outline-width: 0;
-    border-bottom: 2px solid #000000; 
+    border-bottom: 2px solid #000000;
+    p
+}
+input:focus::placeholder {
+    color: transparent;
 }
 
 .promobut{
@@ -37,4 +44,31 @@ input[type=text]:focus {
     font-family: Montserrat;
     border: 1 solid #000000;
     background: #ffffff;
+}
+
+.buytext{
+    font-size: 24px;
+}
+
+.downbut{
+    outline-width: 0;
+    font-size: 36px;
+    font-family: Montserrat;
+    border: 1 solid #000000;
+    background: #ffffff;
+}
+
+.backbut{
+    outline-width: 0;
+    font-size: 36px;
+    font-family: Montserrat;
+    border: 1 solid #000000;
+    background: #ffffff;
+}
+
+
+/* unvisited link */
+a:link, a:visited, a:hover, a:active {
+    color: black;
+    text-decoration: none;
 }

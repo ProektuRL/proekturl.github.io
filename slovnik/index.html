@@ -7,27 +7,26 @@
 
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8"/>
-    <title>Словникi</title>
+    <title>Словники</title>
   </head>
   <body>
     <div class="title">
       Словники відкриті тільки для розумних людей
     </div>
     <div class="whyslov">
-      Чому ти должен користуватися словником?
+      Чому ти повинен користуватися словником?
       <ul>
-        <li>Словник це круто</li>
-        <li>Словник це удобно</li>
-        <li>Словник це практично</li>
-        <li>Словник це умно</li>
+        <li>Тому що це зручно</li>
+        <li>Тому що це інтелігентно</li>
+        <li>Словник це сучастно</li>
       </ul>
     </div>
     <div class="buy">
-      <span>
-        Введить промокод:<br>
+      <span class="buytext">
+        Купуй словник, не будь боржник свого мовного запасу <br>
       </span>
       <form id="promform" action="download.html">
-        <input type="text" name="promocode">
+        <input type="text" name="promocode" placeholder="Введіть промокод">
         <br>
         <button type="submit" class = "promobut">Використати</button>
       </form>
@@ -35,7 +34,7 @@
     <script>
     var form = document.getElementById("promform");
     form.addEventListener('submit', function(e) {
-      if (form.promocode.value !== "123") e.preventDefault();
+      if (form.promocode.value !== "LOVE4WORDS") e.preventDefault();
     });
     </script>
     
